@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postcolonial Board Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="game-container">
+    <!-- Transparent canvas over your board.png background -->
+    <canvas id="game-board" width="1536" height="1024"></canvas>
+
+    <!-- Player stats -->
+    <div id="player-stats">
+      <h2 id="player-role">Player: Revolutionary</h2>
+      <p>Money: <span id="money">10</span></p>
+      <p>Knowledge: <span id="knowledge">10</span></p>
+      <p>Influence: <span id="influence">10</span></p>
+    </div>
+
+    <!-- Action controls -->
+    <div id="controls">
+      <button id="move-button">Move</button>
+      <button id="draw-card-button">Draw Card</button>
+    </div>
+
+    <!-- Card display box -->
+    <div id="card-display" class="hidden">
+      <h3>Event Card</h3>
+      <p id="card-text">Click "Draw Card" to get an event.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

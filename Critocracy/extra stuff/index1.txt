@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historical Board Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="board-canvas"></canvas>
+
+    <div id="controls">
+      <button id="roll-btn">Roll Dice</button>
+    </div>
+
+    <div id="player-tokens">
+      <!-- Tokens will be dynamically added via JS -->
+    </div>
+
+    <div id="bags">
+      <!-- Each player's bag/status appears here -->
+    </div>
+
+    <div id="direction-choice" class="hidden">
+      <!-- Direction options appear here -->
+    </div>
+
+    <div id="card-display" class="card-popup hidden">
+      <!-- Card text appears here -->
+    </div>
+
+    <div id="victory-screen" class="hidden">
+      <!-- Leaderboard display -->
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
